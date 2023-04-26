@@ -3,8 +3,8 @@
   /*   1. ------->  CSS RESET   */
   /*   2. ------->  UTILITY CLASSES   */
   /*   3. ------->  GENERAL STYLING   */
-  /*   4. ------->  INSERT-SECTION-NAME   */
-  /*   5. ------->  INSERT-SECTION-NAME   */
+  /*   4. ------->  CONTACT SECTION   */
+  /*   5. ------->  NAVIGATION       */
   /*   6. ------->  INSERT-SECTION-NAME   */
   /*   7. ------->  INSERT-SECTION-NAME   */
   /*   8. ------->  INSERT-SECTION-NAME   */
@@ -256,10 +256,6 @@ h3{
   margin-bottom: var(--size-500);
 }
 
-img{
-  border-radius: var(--size-400);
-}
-
 .container{
   --max-width: 1070px;
   --horizontal-padding: var(--size-500);
@@ -386,6 +382,7 @@ article{
 .about-img-wrap img{
   width: 90%;
   height: 100%;
+  border-radius: var(--size-500);
   object-fit: cover;
 }
 
@@ -410,7 +407,7 @@ article{
   max-width: 66vmin;
   transform-origin: center;
   width:100%;
-  animation-name:rotate ;
+  animation-name:rotate;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
@@ -464,6 +461,7 @@ article{
 
 .icon{
   width: 30px;
+  fill: inherit;
 }
 
 
@@ -500,7 +498,31 @@ article{
   
 }
 
-/* navigation */
+
+  /*   4. ------->  CONTACT SECTION   */
+.contact-info{
+  display: flex;
+  gap: var(--size-900)
+}
+
+  .contact-location,
+  .contact-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: .5rem;
+  }
+
+  .contact-location div,
+  .contact-email div{
+    text-align: left;
+  }
+
+  #contact svg{
+    fill: var(--clr-accent-400);
+  }
+
+  /*   5. ------->  NAVIGATION   */
 
 #logo{
   text-decoration: none;
@@ -598,11 +620,6 @@ article{
  background-color: transparent;
 }
 
-
-@media (min-width:50em) {
-
-  
-}
 
 @media(max-width: 50em){
   .nav-wrapper{

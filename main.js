@@ -1,5 +1,7 @@
 'use-strict'
 
+console.log("gleoos")
+
 const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
 const toggleIcon = document.querySelector(".toggle-icon");
 const navigation = document.querySelector(".navigation")
