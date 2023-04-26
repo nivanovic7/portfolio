@@ -502,24 +502,40 @@ article{
   /*   4. ------->  CONTACT SECTION   */
 .contact-info{
   display: flex;
-  gap: var(--size-900)
+  gap: var(--size-900);
+  display: flex;
+  flex-direction: column;
 }
 
   .contact-location,
   .contact-email{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap: .5rem;
+    align-items: center;
+    text-align: center;
+    gap: var(--size-400);
   }
 
   .contact-location div,
   .contact-email div{
-    text-align: left;
   }
 
   #contact svg{
     fill: var(--clr-accent-400);
+  }
+
+  @media (min-width: 50em) {
+    .contact-info{
+      flex-direction: row;
+    }
+    
+      .contact-location,
+      .contact-email{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+      }
+    
   }
 
   /*   5. ------->  NAVIGATION   */
