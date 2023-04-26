@@ -4,8 +4,8 @@
   /*   2. ------->  UTILITY CLASSES   */
   /*   3. ------->  GENERAL STYLING   */
   /*   4. ------->  CONTACT SECTION   */
-  /*   5. ------->  NAVIGATION       */
-  /*   6. ------->  INSERT-SECTION-NAME   */
+  /*   5. ------->  FOOTER SECTION   */
+  /*   6. ------->  NAVIGATION   */
   /*   7. ------->  INSERT-SECTION-NAME   */
   /*   8. ------->  INSERT-SECTION-NAME   */
   /*   9. ------->  INSERT-SECTION-NAME   */
@@ -192,7 +192,7 @@ select {
 }
 
 .padding-block-medium{
-  padding: var(siz5) 0;
+  padding: var(--size-700) 0;
 }
 
 .padding-block-big{
@@ -286,6 +286,7 @@ h3{
   display: flex;
   gap: .5rem;
   justify-content: center;
+  align-items: center;
 }
 
 .cta-links a{
@@ -516,10 +517,6 @@ article{
     gap: var(--size-400);
   }
 
-  .contact-location div,
-  .contact-email div{
-  }
-
   #contact svg{
     fill: var(--clr-accent-400);
   }
@@ -538,7 +535,30 @@ article{
     
   }
 
-  /*   5. ------->  NAVIGATION   */
+  
+  /*   5. ------->  FOOTER SECTION   */
+  footer > div{
+    display: flex;
+  flex-direction: column;    
+  align-items: center;
+  gap: var(--size-500);
+  }
+
+  footer .icon{
+    fill: var(--clr-primary-100)
+  }
+
+  @media (min-width: 50em) {
+   footer>div{
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+   }
+  }
+
+
+
+  /*   6. ------->  NAVIGATION   */
 
 #logo{
   text-decoration: none;
