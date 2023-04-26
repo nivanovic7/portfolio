@@ -81,7 +81,7 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -456,6 +456,10 @@ article{
 .project-article .links img{
   width: 1.5rem;
   display: inline;
+}
+
+.links a{
+  color: inherit;
 }
 
 .icon{
