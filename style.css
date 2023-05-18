@@ -10,7 +10,7 @@
   /*   8. ------->  INSERT-SECTION-NAME   */
   /*   9. ------->  INSERT-SECTION-NAME   */
 
-  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Poppins:wght@800;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;400;600;700;800;900&family=Poppins:wght@400;500;600;900;800;700&display=swap');
 
 
 
@@ -331,7 +331,10 @@ h3{
     .skills{
       flex-direction: column;
     }
-  
+
+    .section-title, h2{
+      text-align: center;
+    }
 }
 
 .skills p{
@@ -365,14 +368,31 @@ article{
   min-height: 350px;
   height: 100%;
   cursor: pointer;
-  background-image: url('./assets/website.png');
   background-size: 100%;
   background-position: 0 0;
-  transition: all 12s ease-in-out;
+  transition: all 5s ease-in-out;
   border-radius: var(--size-500);
 }
 
-.project-preview:hover{
+.project-1 .project-preview{
+  background-image: url('./assets/scandiweb.png');
+}
+
+.project-1 .project-preview:hover{
+  background-position: 100% 100%;
+}
+
+.project-2 .project-preview{
+  background-image: url('./assets/login.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.project-3 .project-preview{
+  background-image: url('./assets/recipe\ app.png');
+}
+
+.project-3 .project-preview:hover{
   background-position: 100% 100%;
 }
 
